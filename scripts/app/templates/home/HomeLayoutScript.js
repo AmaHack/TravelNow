@@ -1,5 +1,5 @@
 Aria.tplScriptDefinition({
-    $classpath : "app.templates.MainLayoutScript",
+    $classpath : "app.templates.home.HomeLayoutScript",
 	$constructor: function(){
 		var myScroll;
 	},    

@@ -1,5 +1,5 @@
 {Template {
-  $classpath : "app.templates.Footer"
+  $classpath : "app.templates.home.Footer"
 }}
   {macro main()}
   	<div class="button">About amadeus</div>

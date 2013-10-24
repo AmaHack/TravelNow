@@ -1,5 +1,5 @@
 {Template {
-  $classpath : "app.templates.MainLayout",
+  $classpath : "app.templates.home.HomeLayout",
   $hasScript: true
 }}
 
@@ -25,6 +25,12 @@
       name : "footer"
     }/}
   </div>
+  <div class="popUp">
+  {@embed:Placeholder {
+      name : "popup"
+    }/}
+  </div>
+  <div class="mask"></div>
   {/macro}
 
 {/Template}
