@@ -1,0 +1,44 @@
+{
+    contents : {
+        placeholderContents : {
+        },
+        menus : {
+        }
+    },
+    pageComposition : {
+        template : "app.templates.home.HomeLayout",
+        css : [], // available since Aria Templates 1.3-7
+        placeholders : {            
+            "header" : {
+                "template" : "app.templates.home.Header",
+            },
+            "content" : {
+                "template" : "app.templates.home.Content",
+            },
+            "footer" : {
+                "template" : "app.templates.home.Footer",
+            },
+            "popup" :{
+                "template" : "app.templates.home.Popup",  
+            }
+        },
+        modules : {
+            "friends" : {
+                classpath : "app.modules.Friends"
+            },  
+            "seasonal" : {
+                classpath : "app.modules.Seasonal"
+            },  
+            "age" : {
+                classpath : "app.modules.Age"
+            }  
+        }
+    },
+    pageId : "HOME",
+    url : "/home",
+    title : "Travel Now | Home",
+    animation : { // available since Aria Templates 1.4-2
+        animateIn : "slide left",
+        animateOut : "slide right"
+    }
+}
