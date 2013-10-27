@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>GetTopEvents</servlet-name>
+		<servlet-class>com.amadeus.social.media.servlets.GetTopEventsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetTopEvents</servlet-name>
+		<url-pattern>/GetTopEvents</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetAvailability</servlet-name>
+		<servlet-class>com.amadeus.social.media.servlets.GetBookAvailability</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetAvailability</servlet-name>
+		<url-pattern>/GetAvailability</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetEventsInCity</servlet-name>
+		<servlet-class>com.amadeus.social.media.servlets.GetEventsInCity</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetEventsInCity</servlet-name>
+		<url-pattern>/GetEventsInCity</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
