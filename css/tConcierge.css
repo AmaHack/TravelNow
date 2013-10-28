@@ -373,6 +373,13 @@ header .airCraftIco {
 	opacity:0.5;
 	z-index:500
 }
+.loading{
+	position:absolute;
+	top:50%;
+	left:50%;
+	z-index:501;
+	display: none;
+}
 .popUp {
 	background:#fff;
 	position:absolute;
