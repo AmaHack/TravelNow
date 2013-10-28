@@ -227,10 +227,14 @@ public class GetTopEventsServlet extends HttpServlet {
 											// add to tree map
 											if (cityMap.containsKey(key.toString())) {
 												
+												// get JSONObject
+												JSONObject cityJson = cityMap.get(key.toString());
+												
 												// if already our map contains maximum number of events
 												// (which is provided in parameter) then don't add to array 
-												if (cityMap.get(key.toString()).length() < maxNumberOfEvents) {
-													JSONObject cityJson = cityMap.get(key.toString());
+												if (cityJson.get("events") instanceof JSONArray 
+														&& cityJson.getJSONArray("events").length() < maxNumberOfEvents) {
+													
 													cityJson.getJSONArray("events").put(filteredEventJSON);
 												}
 											} else {
