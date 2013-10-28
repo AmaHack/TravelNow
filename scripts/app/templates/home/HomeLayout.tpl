@@ -49,7 +49,6 @@
     <div class="faceBookPopUp">
     {if this.data.popupData.list.length > 0}
       {set lists = this.data.popupData.list /}
-      ${console.log(lists)|eat}
       {foreach list inArray lists}
         <div class="button">
           <ul>
