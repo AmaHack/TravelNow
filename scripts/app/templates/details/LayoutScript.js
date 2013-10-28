@@ -6,7 +6,7 @@ Aria.tplScriptDefinition({
 	$prototype : {
 
         $displayReady: function(){
-        	$(".mask, .fb, .ses, .well, .popUp").hide();
+        	console.log(this.data);
 			myScroll = new iScroll('wrapper');
 			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 			document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);

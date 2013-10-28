@@ -25,10 +25,12 @@
       }
     });
 
+    var pageEngine;
+
     Aria.load({
         classes: ["aria.pageEngine.PageEngine", "aria.pageEngine.pageProviders.BasePageProvider"],
         oncomplete: function() {
-            var pageEngine = new aria.pageEngine.PageEngine();
+            pageEngine = new aria.pageEngine.PageEngine();
             pageEngine.start({
                 pageProvider : new aria.pageEngine.pageProviders.BasePageProvider({
                         siteConfigLocation : "app/site.json",

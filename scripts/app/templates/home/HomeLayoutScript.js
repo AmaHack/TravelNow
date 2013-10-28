@@ -57,6 +57,10 @@ Aria.tplScriptDefinition({
 			$(".loading").hide();
 			$(".popUp, .dialog").show();
 			$(".mask, .popUp, .dialog").show();
+		},
+		getDetails: function(){
+			this.moduleCtrl.data = this.data;
+			pageEngine.navigate({'pageId':'DETAILS'});
 		}
 
     }
