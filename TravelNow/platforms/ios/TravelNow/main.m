@@ -20,7 +20,7 @@
 //  main.m
 //  TravelNow
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Created by ___FULLUSERNAME___ on ___DATE___.g
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
 //
 
